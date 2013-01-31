@@ -1,0 +1,10 @@
+<ul id="users">
+	<% @all_tweets.each do |tweet| %>
+		<li class="tweet">
+			<div class="tweet_title col"><%=tweet.title%></div>
+			<div class="tweet_contents col"><%=tweet.data%></div>
+			<div class="user col"><%=tweet.user.first_name+' '+tweet.user.last_name%></div>
+		</li>
+	<% end %>
+</ul>
+
